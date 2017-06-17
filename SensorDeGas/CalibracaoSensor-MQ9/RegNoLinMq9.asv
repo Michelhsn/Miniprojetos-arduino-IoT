@@ -1,0 +1,28 @@
+function [fitresult, gof] = RegNoLinMq9(x, yn)
+%Criando função para ajuste de curva, usando método dos mínimos quadrados
+%generalizado
+
+
+%% Dados da curva
+[xData, yData] = prepareCurveData( x, yn );
+
+% Opções de para plotar a curva baseada nas condições que os dados
+% apresentam
+ft = fittype( 'power1' );
+opts = fitoptions( 'Method', 'NonlinearLeastSquares' );
+opts.Display = 'Off';
+opts.StartPoint = [20.8051790207574 -0.472692140888796];
+
+% Modelo de Ajuste.
+[fitresult, gof] = fit( xData, yData, ft, opts );
+
+% Plotando
+figure( 'Name', 'untitled fit 1' );
+h = plot( fitresult, xData, yData );
+legend( h, 'yn vs. x', 'untitled fit 1', 'Location', 'NorthEast' );
+% Eixos
+xlabel x
+ylabel yn
+grid on
+
+
