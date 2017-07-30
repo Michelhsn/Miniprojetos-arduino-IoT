@@ -1,0 +1,71 @@
+##mq9 CO
+General model Power2:
+     f(x) = a*x^b+c
+Coefficients (with 95% confidence bounds):
+       a =       20.48  (-44.93, 85.88)
+       b =     -0.4687  (-1.302, 0.3644)
+       c =   -0.009545  (-2.139, 2.12)
+
+Goodness of fit:
+  SSE: 7.688e-05
+  R-square: 0.9998
+  Adjusted R-square: 0.9995
+  RMSE: 0.008768
+
+##mq9 CH4
+General model Power2:
+     f(x) = a*x^b+c
+Coefficients (with 95% confidence bounds):
+       a =       14.96  (11.43, 18.49)
+       b =     -0.2625  (-0.3369, -0.1881)
+       c =     -0.6315  (-1.302, 0.03889)
+
+Goodness of fit:
+  SSE: 0.009181
+  R-square: 0.9978
+  Adjusted R-square: 0.9971
+  RMSE: 0.03912
+
+##mq9 LPG
+General model Power2:
+     f(x) = a*x^b+c
+Coefficients (with 95% confidence bounds):
+       a =       19.66  (12.48, 26.85)
+       b =     -0.4101  (-0.4945, -0.3257)
+       c =     -0.1323  (-0.3708, 0.1062)
+
+Goodness of fit:
+  SSE: 0.00597
+  R-square: 0.9975
+  Adjusted R-square: 0.9967
+  RMSE: 0.03154
+
+##mq8 H2
+General model Power2:
+     f(x) = a*x^b+c
+Coefficients (with 95% confidence bounds):
+       a =        6056  (3805, 8308)
+       b =      -1.238  (-1.309, -1.167)
+       c =    -0.08409  (-0.2003, 0.03214)
+
+Goodness of fit:
+  SSE: 0.02924
+  R-square: 0.9995
+  Adjusted R-square: 0.9993
+  RMSE: 0.0698
+
+
+##mq8 Alcool
+General model Power2:
+     f(x) = a*x^b+c
+Coefficients (with 95% confidence bounds):
+       a =       336.7  (245, 428.4)
+       b =     -0.4777  (-0.537, -0.4183)
+       c =      -1.881  (-3.466, -0.2962)
+
+Goodness of fit:
+  SSE: 0.4452
+  R-square: 0.9988
+  Adjusted R-square: 0.9985
+  RMSE: 0.2724
+
