@@ -1,12 +1,12 @@
 function [fitresult, gof] = RegNoLinMq9(x, yn)
-%Criando função para ajuste de curva, usando método dos mínimos quadrados
-%generalizado
+%Criando funÃ§Ã£o
+%generalizada
 
 
 %% Dados da curva
 [xData, yData] = prepareCurveData( x, yn );
 
-% Opções de para plotar a curva baseada nas condições que os dados
+% OpÃ§Ãµes de para plotar a curva baseada nas condiÃ§Ãµes que os dados
 % apresentam
 ft = fittype( 'power1' );
 opts = fitoptions( 'Method', 'NonlinearLeastSquares' );
