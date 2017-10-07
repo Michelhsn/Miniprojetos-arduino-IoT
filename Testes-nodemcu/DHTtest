@@ -1,0 +1,36 @@
+// Teste DHT-22 NodeMCU
+
+#include "DHT.h"
+
+#define DHTPIN D3    // Pino NodeMCU 
+#define DHTTYPE DHT22
+DHT dht(DHTPIN, DHTTYPE);
+
+void setup() {
+  Serial.begin(115200);
+  Serial.println("Teste DHT-22");
+
+  dht.begin();
+}
+
+void loop() {
+ 
+
+  
+  float u = dht.readHumidity();
+  
+  float c = dht.readTemperature();
+
+  // Checar falhas
+  if (isnan(u) || isnan(c)) {
+    Serial.println("Leitura Falhou");
+    return;
+  }
+
+  Serial.print("Umidade: ");
+  Serial.print(u);
+  Serial.print(" %\t");
+  Serial.print("Temperatura: ");
+  Serial.print(c);
+  Serial.println(" *C ");
+}
